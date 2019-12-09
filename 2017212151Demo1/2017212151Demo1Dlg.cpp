@@ -291,6 +291,7 @@ void CMy2017212151Demo1Dlg::OnNMClickListShow(NMHDR *pNMHDR, LRESULT *pResult)
 			MessageBoxW(_T("读取数据集失败"));
 			return;
 		}
+
 		while (row = mysql_fetch_row(result)) {
 			if (char2CSt(row[0]) == char2CSt("1")) {
 				m_btnCourse1.SetCheck(TRUE);
